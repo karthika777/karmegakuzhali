@@ -34,7 +34,7 @@ resource "aws_subnet" "web-subnet-1" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "Websubterra-1a"
+    Name = "Websubterra1-1a"
   }
 }
 
@@ -45,7 +45,7 @@ resource "aws_subnet" "web-subnet-2" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "Websubterra-2b"
+    Name = "Websubterra1-2b"
   }
 }
 
@@ -57,7 +57,7 @@ resource "aws_subnet" "application-subnet-1" {
   map_public_ip_on_launch = false
 
   tags = {
-    Name = "Applicationsubterra-1a"
+    Name = "Applicationsubterra1-1a"
   }
 }
 
@@ -68,7 +68,7 @@ resource "aws_subnet" "application-subnet-2" {
   map_public_ip_on_launch = false
 
   tags = {
-    Name = "Applicationsubterra-2b"
+    Name = "Applicationsubterra1-2b"
   }
 }
 
@@ -79,7 +79,7 @@ resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.my-vpc.id
 
   tags = {
-    Name = "Terra-IGW"
+    Name = "Terra1-IGW"
   }
 }
 
@@ -94,7 +94,7 @@ resource "aws_route_table" "web-rt" {
   }
 
   tags = {
-    Name = "Webterra-RT"
+    Name = "Webterra1-RT"
   }
 }
 
